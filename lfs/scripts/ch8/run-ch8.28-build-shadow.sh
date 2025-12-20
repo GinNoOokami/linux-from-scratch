@@ -47,6 +47,9 @@ time {
     # Create the useradd default parameters
     mkdir -p /etc/default
     useradd -D --gid 999
+
+    # Hardcode a default root password- it's just a toy OS after all
+    echo lfs | passwd root -s
 }
 
 popd
